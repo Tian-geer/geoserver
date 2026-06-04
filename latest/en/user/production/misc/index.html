@@ -25,7 +25,7 @@
     
     
       
-        <title>Other Considerations - GeoServer Documentation</title>
+        <title>Other Considerations - Documentation</title>
       
     
     
@@ -146,10 +146,14 @@
       </div>
     
     
-      <header class="md-header" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header"><a href="../../../.." title="GeoServer Documentation" class="md-header__button md-logo" aria-label="GeoServer Documentation" data-md-component="logo">
       
-  <img src="../../../../img/geoserver-logo.png" alt="logo">
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header"><a href="../../../.." title="Documentation" class="md-header__button md-logo" aria-label="Documentation" data-md-component="logo">
+      
+  <img src="../../../../img/geoserver-logo.svg" alt="logo">
 
     </a><label class="md-header__button md-icon" for="__drawer">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
@@ -157,7 +161,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            GeoServer Documentation
+            Documentation
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -385,12 +389,12 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../.." title="GeoServer Documentation" class="md-nav__button md-logo" aria-label="GeoServer Documentation" data-md-component="logo">
+    <a href="../../../.." title="Documentation" class="md-nav__button md-logo" aria-label="Documentation" data-md-component="logo">
       
-  <img src="../../../../img/geoserver-logo.png" alt="logo">
+  <img src="../../../../img/geoserver-logo.svg" alt="logo">
 
     </a>
-    GeoServer Documentation
+    Documentation
   </label>
   
     <div class="md-nav__source">
@@ -955,14 +959,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../installation/upgrade/" class="md-nav__link">
+      <a href="../../installation/upgrade3/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Upgrading GeoServer
+    Upgrading GeoServer 3
   
 
     
@@ -1589,14 +1593,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../data/webadmin/layerpreview/" class="md-nav__link">
+      <a href="../../data/webadmin/browselayers/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Layer Preview
+    Browse Layers
   
 
     
@@ -2173,7 +2177,7 @@
   <span class="md-ellipsis">
     
   
-    Configuration
+    ImageMosaic configuration
   
 
     
@@ -19890,7 +19894,7 @@
   <span class="md-ellipsis">
     
   
-    Configuration
+    Getting Started
   
 
     
@@ -19946,7 +19950,7 @@
   <span class="md-ellipsis">
     
   
-    Advanced
+    Advanced Configuration
   
 
     
@@ -21712,7 +21716,7 @@
   <span class="md-ellipsis">
     
   
-    Features Templatring Rest API
+    Features Templating Rest API
   
 
     
@@ -25360,7 +25364,7 @@
   <span class="md-ellipsis">
     
   
-    Schema
+    Opt. 1: Removing Redundant Schema Information
   
 
     
@@ -25388,7 +25392,7 @@
   <span class="md-ellipsis">
     
   
-    Attributes
+    Opt. 2: Removing Redundant Attribute Values
   
 
     
@@ -26626,6 +26630,8 @@
       
         
       
+        
+      
     
     
     
@@ -27192,6 +27198,34 @@
     
   
     Setting up a JNDI connection pool with Tomcat
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/tomcat-hardening/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tomcat hardening
   
 
     
@@ -29610,7 +29644,7 @@
   <span class="md-ellipsis">
     
   
-    Installing mkdocs
+    Installing MkDocs
   
 
     
@@ -29892,7 +29926,7 @@
 <p>If your GeoServer is operating as part of a "Spatial Data Infrastructure" it may be registered with a catalogue service.</p>
 </li>
 </ul>
-<p>Catalogue services such as <a href="http://geonetwork-opensource.org/">GeoNetwork-opensource</a> or <a href="https://pycsw.org">PyCSW</a> can harvest GeoServer listing the web serivces and layers published allowing content to be more easily browsed and searched.</p>
+<p>Catalogue services such as <a href="http://geonetwork-opensource.org/">GeoNetwork-opensource</a> or <a href="https://pycsw.org">PyCSW</a> can harvest GeoServer listing the web services and layers published allowing content to be more easily browsed and searched.</p>
 <h2 id="clustering">Clustering<a class="headerlink" href="#clustering" title="Permanent link">&para;</a></h2>
 <p>Setting up a <a href="http://en.wikipedia.org/wiki/Cluster_(computing)">Cluster</a> is one of the best ways to improve the reliability and performance of your GeoServer installation.</p>
 <p>There are a variety of techniques to configure a cluster, including at the container level, the virtual machine level, and the physical server level.</p>
@@ -29903,8 +29937,14 @@
 <li>Optional: Use <a href="../../configuration/logging/#logging_location">Overriding the log location setup in the GeoServer configuration</a> settings to direct logs from individual nodes to different files.</li>
 <li>
 <p>While most web services are stateless, some functionality like importer or WPS may require the use of an extension to share state between nodes.</p>
+<ul>
+<li>
 <p>WPS clustering has extensions for Hazelcast and JDBC (shared database).</p>
+</li>
+<li>
 <p>Importer provides an extension to establish a Berkley shared database.</p>
+</li>
+</ul>
 </li>
 <li>
 <p>The challenge to operating a cluster is the management of changes to the data directory configuration to ensure all the nodes are operating with the same configuration and produce the same results.</p>
@@ -29917,7 +29957,7 @@
 </ol>
 <p>The limitation of these approach is the startup time associated with restarting nodes. Several community modules exist to address this limitation:</p>
 <ul>
-<li>The project <a href="https://github.com/geoserver/geoserver-cloud">Cloud Native GeoServer</a> breaks the GeoServer application into microservies that may be scaled by Kubernetes.</li>
+<li>The project <a href="https://github.com/geoserver/geoserver-cloud">Cloud Native GeoServer</a> breaks the GeoServer application into microservices that may be scaled by Kubernetes.</li>
 </ul>
 <p>This prevents the needs to restart nodes, but requires a microservice environment.</p>
 <ul>

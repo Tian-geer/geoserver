@@ -25,7 +25,7 @@
     
     
       
-        <title>JMS based Clustering - GeoServer Documentation</title>
+        <title>JMS based Clustering - Documentation</title>
       
     
     
@@ -146,10 +146,14 @@
       </div>
     
     
-      <header class="md-header" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header"><a href="../../../.." title="GeoServer Documentation" class="md-header__button md-logo" aria-label="GeoServer Documentation" data-md-component="logo">
       
-  <img src="../../../../img/geoserver-logo.png" alt="logo">
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header"><a href="../../../.." title="Documentation" class="md-header__button md-logo" aria-label="Documentation" data-md-component="logo">
+      
+  <img src="../../../../img/geoserver-logo.svg" alt="logo">
 
     </a><label class="md-header__button md-icon" for="__drawer">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
@@ -157,7 +161,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            GeoServer Documentation
+            Documentation
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -385,12 +389,12 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../.." title="GeoServer Documentation" class="md-nav__button md-logo" aria-label="GeoServer Documentation" data-md-component="logo">
+    <a href="../../../.." title="Documentation" class="md-nav__button md-logo" aria-label="Documentation" data-md-component="logo">
       
-  <img src="../../../../img/geoserver-logo.png" alt="logo">
+  <img src="../../../../img/geoserver-logo.svg" alt="logo">
 
     </a>
-    GeoServer Documentation
+    Documentation
   </label>
   
     <div class="md-nav__source">
@@ -955,14 +959,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../installation/upgrade/" class="md-nav__link">
+      <a href="../../installation/upgrade3/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Upgrading GeoServer
+    Upgrading GeoServer 3
   
 
     
@@ -1589,14 +1593,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../data/webadmin/layerpreview/" class="md-nav__link">
+      <a href="../../data/webadmin/browselayers/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Layer Preview
+    Browse Layers
   
 
     
@@ -2173,7 +2177,7 @@
   <span class="md-ellipsis">
     
   
-    Configuration
+    ImageMosaic configuration
   
 
     
@@ -19797,7 +19801,7 @@
   <span class="md-ellipsis">
     
   
-    Configuration
+    Getting Started
   
 
     
@@ -19853,7 +19857,7 @@
   <span class="md-ellipsis">
     
   
-    Advanced
+    Advanced Configuration
   
 
     
@@ -21621,7 +21625,7 @@
   <span class="md-ellipsis">
     
   
-    Features Templatring Rest API
+    Features Templating Rest API
   
 
     
@@ -25271,7 +25275,7 @@
   <span class="md-ellipsis">
     
   
-    Schema
+    Opt. 1: Removing Redundant Schema Information
   
 
     
@@ -25299,7 +25303,7 @@
   <span class="md-ellipsis">
     
   
-    Attributes
+    Opt. 2: Removing Redundant Attribute Values
   
 
     
@@ -26537,6 +26541,8 @@
       
         
       
+        
+      
     
     
     
@@ -27103,6 +27109,34 @@
     
   
     Setting up a JNDI connection pool with Tomcat
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/tomcat-hardening/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tomcat hardening
   
 
     
@@ -29521,7 +29555,7 @@
   <span class="md-ellipsis">
     
   
-    Installing mkdocs
+    Installing MkDocs
   
 
     
@@ -29909,14 +29943,14 @@
 <ul>
 <li>A pure Primary GeoServer(s), this instance can only send events to the topic. It cannot act as a replica</li>
 <li>A set of GeoServer which can work as both Primary and Replica. These instances can send and receive messages to/from the topic. They can work as Primaries (sending message to other subscribers) as well as Replicas (these instances are also subscribers of the topic).</li>
-<li>A set of pure Replicas GeoServer instances whic can only receive messages from the topic.</li>
+<li>A set of pure Replicas GeoServer instances which can only receive messages from the topic.</li>
 <li>A set of MOM brokers so that each GeoServer instance is configured with a set of available brokers (failover). Each broker use the shared database as persistence. Doing so if a broker fails for some reason, messages can still be written and read from the shared database.</li>
 </ul>
 <p>All the produced code is based on spring-jms to ensure portability amongst different MOM, but if you look at the schema, we are also leveraging ActiveMQ VirtualTopics to get dynamic routing (you can dynamically attach primary and replica).</p>
 <p>The VirtualTopics feature has also other advantages explained here: <a href="http://activemq.apache.org/virtual-destinations.html">http://activemq.apache.org/virtual-destinations.html</a></p>
 <p>As said above, in the default configuration the MOM runs inside GeoServer itself, simplifying the topology and the setup effort.</p>
 <h3 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h3>
-<p>To install the jms cluster modules into an existing GeoServer refer to the <a href="#jms-installation">jms.installation</a> page</p>
+<p>To install the jms cluster modules into an existing GeoServer refer to the <a href="#installation">Installation</a> page</p>
 <h2 id="how-to-configure-geoserver-instances">How to configure GeoServer Instances<a class="headerlink" href="#how-to-configure-geoserver-instances" title="Permanent link">&para;</a></h2>
 <p>The configuration for the GeoServer is very simple and can be performed using the provided GUI or modifying the <code>cluster.properties</code> file which is stored into the <code>GEOSERVER_DATA_DIR</code> under the <code>cluster</code> folder (e.g. <code>${GEOSERVER_DATA_DIR}/cluster</code>).</p>
 <p>To override the default destination of this configuration file you have to setup the <strong>CLUSTER_CONFIG_DIR</strong> variable defining the destination folder of the <strong>cluster.properties</strong> file. This is <em>mandatory</em> when you want to share the same GEOSERVER_DATA_DIR, but not required if you are giving each GeoServer its own data directory.</p>
@@ -29946,7 +29980,7 @@
 </ul>
 </div>
 <h2 id="bibliography">Bibliography:<a class="headerlink" href="#bibliography" title="Permanent link">&para;</a></h2>
-<p>[JMS specs] Sun microsystens - Java Message Service - Version 1.1 April 12, 2002</p>
+<p>[JMS specs] Sun microsystems - Java Message Service - Version 1.1 April 12, 2002</p>
 <p>[JMS] Snyder Bosanac Davies - ActiveMQ in action - Manning</p>
 <p>[GeoServer] <a href="http://docs.geoserver.org/">http://docs.geoserver.org/</a></p>
 <p>[GeoServer REST] <a href="http://docs.geoserver.org/latest/en/user/rest/index.html#rest">http://docs.geoserver.org/latest/en/user/rest/index.html#rest</a></p>

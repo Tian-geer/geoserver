@@ -25,7 +25,7 @@
     
     
       
-        <title>OGC API Service Configuration - GeoServer Documentation</title>
+        <title>OGC API Service Configuration - Documentation</title>
       
     
     
@@ -146,10 +146,14 @@
       </div>
     
     
-      <header class="md-header" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header"><a href="../../../.." title="GeoServer Documentation" class="md-header__button md-logo" aria-label="GeoServer Documentation" data-md-component="logo">
       
-  <img src="../../../../img/geoserver-logo.png" alt="logo">
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header"><a href="../../../.." title="Documentation" class="md-header__button md-logo" aria-label="Documentation" data-md-component="logo">
+      
+  <img src="../../../../img/geoserver-logo.svg" alt="logo">
 
     </a><label class="md-header__button md-icon" for="__drawer">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
@@ -157,7 +161,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            GeoServer Documentation
+            Documentation
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -385,12 +389,12 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../.." title="GeoServer Documentation" class="md-nav__button md-logo" aria-label="GeoServer Documentation" data-md-component="logo">
+    <a href="../../../.." title="Documentation" class="md-nav__button md-logo" aria-label="Documentation" data-md-component="logo">
       
-  <img src="../../../../img/geoserver-logo.png" alt="logo">
+  <img src="../../../../img/geoserver-logo.svg" alt="logo">
 
     </a>
-    GeoServer Documentation
+    Documentation
   </label>
   
     <div class="md-nav__source">
@@ -955,14 +959,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../installation/upgrade/" class="md-nav__link">
+      <a href="../../installation/upgrade3/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Upgrading GeoServer
+    Upgrading GeoServer 3
   
 
     
@@ -1589,14 +1593,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../data/webadmin/layerpreview/" class="md-nav__link">
+      <a href="../../data/webadmin/browselayers/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Layer Preview
+    Browse Layers
   
 
     
@@ -2173,7 +2177,7 @@
   <span class="md-ellipsis">
     
   
-    Configuration
+    ImageMosaic configuration
   
 
     
@@ -19935,7 +19939,7 @@
   <span class="md-ellipsis">
     
   
-    Configuration
+    Getting Started
   
 
     
@@ -19991,7 +19995,7 @@
   <span class="md-ellipsis">
     
   
-    Advanced
+    Advanced Configuration
   
 
     
@@ -21757,7 +21761,7 @@
   <span class="md-ellipsis">
     
   
-    Features Templatring Rest API
+    Features Templating Rest API
   
 
     
@@ -25405,7 +25409,7 @@
   <span class="md-ellipsis">
     
   
-    Schema
+    Opt. 1: Removing Redundant Schema Information
   
 
     
@@ -25433,7 +25437,7 @@
   <span class="md-ellipsis">
     
   
-    Attributes
+    Opt. 2: Removing Redundant Attribute Values
   
 
     
@@ -26671,6 +26675,8 @@
       
         
       
+        
+      
     
     
     
@@ -27237,6 +27243,34 @@
     
   
     Setting up a JNDI connection pool with Tomcat
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/tomcat-hardening/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tomcat hardening
   
 
     
@@ -29655,7 +29689,7 @@
   <span class="md-ellipsis">
     
   
-    Installing mkdocs
+    Installing MkDocs
   
 
     
@@ -29968,7 +30002,7 @@
 
 
 <h1 id="ogc-api-service-configuration">OGC API Service Configuration<a class="headerlink" href="#ogc-api-service-configuration" title="Permanent link">&para;</a></h1>
-<p>The OGC API modules provide additional services along side the existing Open Web Services (OWS).</p>
+<p>The OGC API modules provide additional services alongside the existing Open Web Services (OWS).</p>
 <h2 id="service">Service<a class="headerlink" href="#service" title="Permanent link">&para;</a></h2>
 <p>The OGC API modules primarily use the same configurations as their equivalent OWS services. So, for example, setting the WFS limited SRS list will also limit the SRS list for OGC API - Features.</p>
 <p>In addition, the OGC API modules will have some unique configuration options.</p>
@@ -29993,7 +30027,7 @@
 </ul>
 <h3 id="custom-links-for-the-collections-resource">Custom links for the "collections" resource<a class="headerlink" href="#custom-links-for-the-collections-resource" title="Permanent link">&para;</a></h3>
 <p>The <code>collections</code> resource can have a number of additional links, beyond the basic ones that the service code already includes.</p>
-<p>Navigate to <strong>Settings &gt; Global</strong>. The links are configured under heading <strong>OGC API Settings</strong>.</p>
+<p>Navigate to <strong>Server &gt; Global Settings</strong>. <!--The links are configured under heading **OGC API Settings**.--></p>
 <p><img alt="" src="img/global_links.png" /></p>
 <p><em>Links used to indicate global Creative Commons license</em></p>
 <p>Link editor column description:</p>
@@ -30046,10 +30080,10 @@
 <h3 id="custom-links-for-single-collection">Custom links for single collection<a class="headerlink" href="#custom-links-for-single-collection" title="Permanent link">&para;</a></h3>
 <p>Additional custom links can be provided for an individual layer. Use the Layer Editor <strong>Publishing</strong> tab, and locate the heading for <strong>OGC API</strong>.</p>
 <p><img alt="" src="img/links.png" /></p>
-<p><em>Links used to define enclosure download for ne:counteries layer</em></p>
+<p><em>Links used to define enclosure download for ne:countries layer</em></p>
 <p>The relationships are the same as for the <code>collections</code> resource, but used in case there is anything that is specific to the collection (e.g., the schema for the single collection).</p>
 <p>In addition, other relations can be specified, like the <code>tag</code> relation, to link to the eventual INSPIRE feature concept dictionary entry.</p>
-<p>Example from workspace <code>ne:counteries</code> collection providing enclosure for download:</p>
+<p>Example from workspace <code>ne:countries</code> collection providing enclosure for download:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">{</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="nt">&quot;href&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip&quot;</span><span class="p">,</span>
 <a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span><span class="nt">&quot;rel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;enclosure&quot;</span><span class="p">,</span>

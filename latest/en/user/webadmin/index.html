@@ -25,7 +25,7 @@
     
     
       
-        <title>Web administration interface - GeoServer Documentation</title>
+        <title>Web administration interface - Documentation</title>
       
     
     
@@ -146,10 +146,14 @@
       </div>
     
     
-      <header class="md-header" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header"><a href="../../.." title="GeoServer Documentation" class="md-header__button md-logo" aria-label="GeoServer Documentation" data-md-component="logo">
       
-  <img src="../../../img/geoserver-logo.png" alt="logo">
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header"><a href="../../.." title="Documentation" class="md-header__button md-logo" aria-label="Documentation" data-md-component="logo">
+      
+  <img src="../../../img/geoserver-logo.svg" alt="logo">
 
     </a><label class="md-header__button md-icon" for="__drawer">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
@@ -157,7 +161,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            GeoServer Documentation
+            Documentation
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -385,12 +389,12 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="GeoServer Documentation" class="md-nav__button md-logo" aria-label="GeoServer Documentation" data-md-component="logo">
+    <a href="../../.." title="Documentation" class="md-nav__button md-logo" aria-label="Documentation" data-md-component="logo">
       
-  <img src="../../../img/geoserver-logo.png" alt="logo">
+  <img src="../../../img/geoserver-logo.svg" alt="logo">
 
     </a>
-    GeoServer Documentation
+    Documentation
   </label>
   
     <div class="md-nav__source">
@@ -955,14 +959,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../installation/upgrade/" class="md-nav__link">
+      <a href="../installation/upgrade3/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Upgrading GeoServer
+    Upgrading GeoServer 3
   
 
     
@@ -1591,14 +1595,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../data/webadmin/layerpreview/" class="md-nav__link">
+      <a href="../data/webadmin/browselayers/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Layer Preview
+    Browse Layers
   
 
     
@@ -2175,7 +2179,7 @@
   <span class="md-ellipsis">
     
   
-    Configuration
+    ImageMosaic configuration
   
 
     
@@ -19799,7 +19803,7 @@
   <span class="md-ellipsis">
     
   
-    Configuration
+    Getting Started
   
 
     
@@ -19855,7 +19859,7 @@
   <span class="md-ellipsis">
     
   
-    Advanced
+    Advanced Configuration
   
 
     
@@ -21621,7 +21625,7 @@
   <span class="md-ellipsis">
     
   
-    Features Templatring Rest API
+    Features Templating Rest API
   
 
     
@@ -25269,7 +25273,7 @@
   <span class="md-ellipsis">
     
   
-    Schema
+    Opt. 1: Removing Redundant Schema Information
   
 
     
@@ -25297,7 +25301,7 @@
   <span class="md-ellipsis">
     
   
-    Attributes
+    Opt. 2: Removing Redundant Attribute Values
   
 
     
@@ -26535,6 +26539,8 @@
       
         
       
+        
+      
     
     
     
@@ -27101,6 +27107,34 @@
     
   
     Setting up a JNDI connection pool with Tomcat
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/tomcat-hardening/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tomcat hardening
   
 
     
@@ -29519,7 +29553,7 @@
   <span class="md-ellipsis">
     
   
-    Installing mkdocs
+    Installing MkDocs
   
 
     
@@ -29803,23 +29837,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Demos">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#you-do-not-need-to-be-logged-into-geoserver-to-access-these-pages" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        You do not need to be logged into GeoServer to access these pages.
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -29890,10 +29907,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#troubleshooing" class="md-nav__link">
+  <a href="#troubleshooting" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Troubleshooing
+        Troubleshooting
       
     </span>
   </a>
@@ -29960,9 +29977,9 @@
 <h2 id="data">Data<a class="headerlink" href="#data" title="Permanent link">&para;</a></h2>
 <p>The <a href="../data/">Data management</a> section contains configuration options for all the different data-related settings.</p>
 <ul>
-<li>The <a href="../data/webadmin/layerpreview/">Layer Preview</a> page provides links to layer previews in different output formats, including the frequently used OpenLayers and KML formats. This page helps to visually verify and explore the configuration of a particular layer.</li>
+<li>The <a href="../data/webadmin/browselayers/">Browse Layers</a> page provides links to layer previews in different output formats, including the frequently used OpenLayers and KML formats. This page helps to visually verify and explore the configuration of a particular layer.</li>
 </ul>
-<p><strong>You do not need to be logged into GeoServer to access the Layer Preview.</strong></p>
+<p><strong>You do not need to be logged into GeoServer to access Browse Layers.</strong></p>
 <ul>
 <li>
 <p>The <a href="../data/webadmin/workspaces/">Workspaces</a> page displays a list of workspaces, with the ability to add, edit, and delete. Also shows which workspace is the default for the server.</p>
@@ -30018,7 +30035,7 @@
 </ul>
 <h2 id="demos">Demos<a class="headerlink" href="#demos" title="Permanent link">&para;</a></h2>
 <p>The <a href="../configuration/demos/">Demos</a> section contains links to example WMS, WCS, and WFS requests for GeoServer as well as a listing all SRS info known to GeoServer. In addition, there is a reprojection console for converting coordinates between spatial reference systems, and a request builder for WCS requests.</p>
-<h3 id="you-do-not-need-to-be-logged-into-geoserver-to-access-these-pages">You do not need to be logged into GeoServer to access these pages.<a class="headerlink" href="#you-do-not-need-to-be-logged-into-geoserver-to-access-these-pages" title="Permanent link">&para;</a></h3>
+<p><strong>You do not need to be logged into GeoServer to access these pages.</strong></p>
 <h2 id="tools">Tools<a class="headerlink" href="#tools" title="Permanent link">&para;</a></h2>
 <p>The <a href="../configuration/tools/">Tools</a> section contains administrative tools.</p>
 <ul>
@@ -30045,7 +30062,7 @@
 <p><img alt="" src="images/language-fr.png" /></p>
 <p><em>Language Chooser fr</em></p>
 <p>The language choice is saved in the session, as well as in a cookie, to retain the language choice across user sessions.</p>
-<h3 id="troubleshooing">Troubleshooing<a class="headerlink" href="#troubleshooing" title="Permanent link">&para;</a></h3>
+<h3 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h3>
 <p>Please see:</p>
 <ul>
 <li><a href="../production/troubleshooting/#wicket_error">Oops, something went wrong</a></li>

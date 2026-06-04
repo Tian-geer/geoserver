@@ -25,7 +25,7 @@
     
     
       
-        <title>REST API - GeoServer Documentation</title>
+        <title>REST API - Documentation</title>
       
     
     
@@ -146,10 +146,14 @@
       </div>
     
     
-      <header class="md-header" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header"><a href="../../../../.." title="GeoServer Documentation" class="md-header__button md-logo" aria-label="GeoServer Documentation" data-md-component="logo">
       
-  <img src="../../../../../img/geoserver-logo.png" alt="logo">
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header"><a href="../../../../.." title="Documentation" class="md-header__button md-logo" aria-label="Documentation" data-md-component="logo">
+      
+  <img src="../../../../../img/geoserver-logo.svg" alt="logo">
 
     </a><label class="md-header__button md-icon" for="__drawer">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
@@ -157,7 +161,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            GeoServer Documentation
+            Documentation
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -385,12 +389,12 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../../.." title="GeoServer Documentation" class="md-nav__button md-logo" aria-label="GeoServer Documentation" data-md-component="logo">
+    <a href="../../../../.." title="Documentation" class="md-nav__button md-logo" aria-label="Documentation" data-md-component="logo">
       
-  <img src="../../../../../img/geoserver-logo.png" alt="logo">
+  <img src="../../../../../img/geoserver-logo.svg" alt="logo">
 
     </a>
-    GeoServer Documentation
+    Documentation
   </label>
   
     <div class="md-nav__source">
@@ -955,14 +959,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../installation/upgrade/" class="md-nav__link">
+      <a href="../../../installation/upgrade3/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Upgrading GeoServer
+    Upgrading GeoServer 3
   
 
     
@@ -1589,14 +1593,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../data/webadmin/layerpreview/" class="md-nav__link">
+      <a href="../../../data/webadmin/browselayers/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Layer Preview
+    Browse Layers
   
 
     
@@ -2173,7 +2177,7 @@
   <span class="md-ellipsis">
     
   
-    Configuration
+    ImageMosaic configuration
   
 
     
@@ -20420,7 +20424,7 @@
   <span class="md-ellipsis">
     
   
-    Configuration
+    Getting Started
   
 
     
@@ -20476,7 +20480,7 @@
   <span class="md-ellipsis">
     
   
-    Advanced
+    Advanced Configuration
   
 
     
@@ -22242,7 +22246,7 @@
   <span class="md-ellipsis">
     
   
-    Features Templatring Rest API
+    Features Templating Rest API
   
 
     
@@ -25890,7 +25894,7 @@
   <span class="md-ellipsis">
     
   
-    Schema
+    Opt. 1: Removing Redundant Schema Information
   
 
     
@@ -25918,7 +25922,7 @@
   <span class="md-ellipsis">
     
   
-    Attributes
+    Opt. 2: Removing Redundant Attribute Values
   
 
     
@@ -27156,6 +27160,8 @@
       
         
       
+        
+      
     
     
     
@@ -27722,6 +27728,34 @@
     
   
     Setting up a JNDI connection pool with Tomcat
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tutorials/tomcat-hardening/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tomcat hardening
   
 
     
@@ -30140,7 +30174,7 @@
   <span class="md-ellipsis">
     
   
-    Installing mkdocs
+    Installing MkDocs
   
 
     
@@ -31199,7 +31233,7 @@
 <p>The representation of a import is the same as the one contained in the import creation response. The execution of a import can be a long task, as such, it's possible to add <code>async=true</code> to the request to make it run in an asynchronous fashion, the client will have to poll the import representation and check when it reaches either the "COMPLETE" or "COMPLETE_ERROR" state.</p>
 <h3 id="data">Data<a class="headerlink" href="#data" title="Permanent link">&para;</a></h3>
 <p>A import can have a "data" representing the source of the data to be imported. The data can be of different types, in particular, "file", "directory", "mosaic", "database" and "remote". During the import initialization the importer will scan the contents of said resource, and generate import tasks for each data found in it.</p>
-<p>Most data types are discussed in the task section, the only type that's specific to the whole import context is the "remote" one, that is used to ask the importer to fetch the data from a remote location autonomusly, without asking the client to perform an upload.</p>
+<p>Most data types are discussed in the task section, the only type that's specific to the whole import context is the "remote" one, that is used to ask the importer to fetch the data from a remote location autonomously, without asking the client to perform an upload.</p>
 <p>The representation of a remote resource looks as follows:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>&quot;data&quot;: {
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>  &quot;type&quot;: &quot;remote&quot;,
@@ -31674,7 +31708,7 @@
 <td>Retrieve the list of transformations of a task with id <taskId> within import with id <importId></td>
 <td>200</td>
 <td>n/a</td>
-<td>A list of transfromations in JSON format</td>
+<td>A list of transformations in JSON format</td>
 </tr>
 <tr>
 <td>POST</td>
@@ -31925,7 +31959,7 @@
 </tbody>
 </table>
 <h4 id="integerfieldtodatetransform">IntegerFieldToDateTransform<a class="headerlink" href="#integerfieldtodatetransform" title="Permanent link">&para;</a></h4>
-<p>Takes a integer field and transforms it to a date, interpreting the intereger field as a date</p>
+<p>Takes a integer field and transforms it to a date, interpreting the integer field as a date</p>
 <table>
 <thead>
 <tr>
